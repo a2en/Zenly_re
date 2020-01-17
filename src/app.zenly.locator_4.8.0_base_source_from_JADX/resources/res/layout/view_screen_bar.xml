@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <app.zenly.android.base.widget.LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Headline" android:textColor="?attr/zenlyTextColorPrimary" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="center" android:id="@+id/view_title" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="@dimen/grid_size_200" android:maxLines="2" android:layout_weight="1"/>
+        <app.zenly.android.base.widget.LinearLayout android:orientation="horizontal" android:id="@+id/actions" android:layout_width="wrap_content" android:layout_height="match_parent" android:divider="@drawable/spacer_200" android:showDividers="none|beginning|middle"/>
+    </app.zenly.android.base.widget.LinearLayout>
+</merge>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.Zenly.Light" android:background="?attr/zenlyColorBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <app.zenly.android.feature.polenta.widget.ScreenBarLayout android:id="@+id/search_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:collapsedHeight="@dimen/grid_size_500">
+        <app.zenly.android.feature.polenta.widget.SearchBar android:id="@+id/search_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_200" app:layoutDescription="@xml/scene_search_bar"/>
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/selection_list" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/grid_size_500" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </app.zenly.android.feature.polenta.widget.ScreenBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/list" android:paddingBottom="96dp" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/search_bar_layout" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <FrameLayout android:id="@+id/primary_action_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_200" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:id="@+id/primary_action" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Button.Large.Primary"/>
+    </FrameLayout>
+</RelativeLayout>

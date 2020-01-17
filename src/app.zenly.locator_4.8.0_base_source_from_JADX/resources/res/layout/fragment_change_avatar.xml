@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.Zenly.Light" android:id="@+id/root_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/background" android:background="@color/blue_black_o70" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0"/>
+    <app.zenly.android.base.widget.LinearLayout android:orientation="horizontal" android:id="@+id/layout_menu" android:background="@drawable/round_rect_top_white_cr325" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/spacer_200" android:showDividers="none|beginning|middle|end" app:behavior_hideable="true" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <app.zenly.android.base.widget.LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/capture" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/spacing_100" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_200" android:layout_marginBottom="@dimen/spacing_200" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080394"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Title" android:textColor="?attr/zenlyTextColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/picture_chooser_camera"/>
+        </app.zenly.android.base.widget.LinearLayout>
+        <app.zenly.android.base.widget.LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/gallery" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/spacing_100" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_200" android:layout_marginBottom="@dimen/spacing_200" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0803a4"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Title" android:textColor="?attr/zenlyTextColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/picture_chooser_gallery"/>
+        </app.zenly.android.base.widget.LinearLayout>
+    </app.zenly.android.base.widget.LinearLayout>
+    <FrameLayout android:id="@+id/progress" android:background="@color/black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <app.zenly.android.base.widget.LinearLayout android:orientation="vertical" android:id="@+id/layout_preview" android:background="@color/black" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.theartofdev.edmodo.cropper.CropImageView android:id="@+id/preview_image_view" android:layout_width="match_parent" android:layout_height="0px" android:scaleType="centerInside" android:layout_weight="1" app:cropAspectRatioX="1" app:cropAspectRatioY="1" app:cropFixAspectRatio="true"/>
+        <FrameLayout android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:background="@color/black" android:padding="@dimen/spacing_200" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/btn_rotate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080247" android:scaleType="centerInside" android:minWidth="@dimen/grid_size_400" android:minHeight="@dimen/grid_size_350"/>
+            <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center" android:id="@+id/btn_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0802ab" style="@style/ImageButton.Large.Primary"/>
+        </FrameLayout>
+    </app.zenly.android.base.widget.LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.zenly.android.base.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.Zenly.Light" android:orientation="vertical" android:background="?attr/zenlyColorBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <app.zenly.android.feature.polenta.widget.ScreenBarLayout android:id="@+id/screen_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <app.zenly.android.feature.polenta.widget.ScreenBar android:id="@+id/screen_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/personalSettings_title"/>
+    </app.zenly.android.feature.polenta.widget.ScreenBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/scroll_view" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <app.zenly.android.base.widget.LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <app.zenly.locator.settings.view.SwitchMenuItem android:id="@+id/settings_personal_private" android:layout_width="match_parent" android:layout_height="wrap_content" app:switchDescription="@string/personalSettings_private_message" app:switchTitle="@string/personalSettings_private_title" style="@style/ListItem"/>
+            <app.zenly.locator.settings.view.SwitchMenuItem android:id="@+id/settings_personal_opt_out_suggestion" android:layout_width="match_parent" android:layout_height="wrap_content" app:switchDescription="@string/personalSettings_optoutSuggested_message" app:switchTitle="@string/personalSettings_optoutSuggested_title" style="@style/ListItem"/>
+        </app.zenly.android.base.widget.LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</app.zenly.android.base.widget.LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:label="@string/co_znly_core_sync_adapter_provider_label" android:icon="@mipmap/ic_launcher" android:accountType="@string/co_znly_core_sync_adapter_account_type" android:smallIcon="@mipmap/ic_launcher"/>

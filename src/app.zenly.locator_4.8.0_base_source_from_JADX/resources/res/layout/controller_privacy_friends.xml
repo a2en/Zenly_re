@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.Zenly.Light" android:background="?attr/zenlyColorBackground" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <app.zenly.android.feature.polenta.widget.ScreenBarLayout android:id="@+id/header_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <app.zenly.android.base.widget.LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <app.zenly.android.feature.polenta.widget.ScreenBar android:id="@+id/screen_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/profile_ghostMode"/>
+                <TextView android:textAppearance="@style/TextAppearance.Callout" android:textColor="?attr/zenlyTextColorSecondary" android:ellipsize="none" android:id="@+id/headerGhostView" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_ghost_title_bulkselect" android:maxLines="2" style="@style/SectionHeader"/>
+            </app.zenly.android.base.widget.LinearLayout>
+            <RelativeLayout android:paddingBottom="@dimen/spacing_100" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/TextAppearance.Callout" android:textColor="?attr/zenlyButtonPrimaryTextColor" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/headerFriendsSelectedCount" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_100" style="@style/SectionHeader"/>
+                <app.zenly.android.base.widget.LinearLayout android:orientation="vertical" android:id="@+id/headerPreciseContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/headerFriendsSelectedCount" android:layout_toStartOf="@+id/headerBlurredContainer">
+                    <ImageButton android:id="@+id/headerPreciseBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080309" style="@style/ImageButton.Large.Primary"/>
+                    <TextView android:textAppearance="@style/TextAppearance.Section" android:textColor="?attr/zenlyButtonPrimaryTextColor" android:gravity="center" android:paddingTop="@dimen/spacing_75" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/commons_privacy_precise"/>
+                </app.zenly.android.base.widget.LinearLayout>
+                <app.zenly.android.base.widget.LinearLayout android:orientation="vertical" android:id="@+id/headerBlurredContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/headerFriendsSelectedCount" android:layout_centerHorizontal="true">
+                    <ImageButton android:id="@+id/headerBlurredBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080302" style="@style/ImageButton.Large.Primary"/>
+                    <TextView android:textAppearance="@style/TextAppearance.Section" android:textColor="?attr/zenlyButtonPrimaryTextColor" android:gravity="center" android:paddingTop="@dimen/spacing_75" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/commons_privacy_blurred"/>
+                </app.zenly.android.base.widget.LinearLayout>
+                <app.zenly.android.base.widget.LinearLayout android:orientation="vertical" android:id="@+id/headerFrozenContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/headerFriendsSelectedCount" android:layout_toEndOf="@+id/headerBlurredContainer">
+                    <ImageButton android:id="@+id/headerFrozenBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0802e4" style="@style/ImageButton.Large.Primary"/>
+                    <TextView android:textAppearance="@style/TextAppearance.Section" android:textColor="?attr/zenlyButtonPrimaryTextColor" android:gravity="center" android:paddingTop="@dimen/spacing_75" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/commons_privacy_frozen"/>
+                </app.zenly.android.base.widget.LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </app.zenly.android.feature.polenta.widget.ScreenBarLayout>
+    <androidx.core.widget.NestedScrollView android:scrollbarStyle="outsideInset" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/header_container" android:fadeScrollbars="false">
+        <app.zenly.locator.privacy.view.ContactsCategorizationView android:id="@+id/privacy_contacts_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar android:id="@+id/progress_bar_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true"/>
+    <app.zenly.android.feature.polenta.widget.EmptyView android:id="@+id/privacy_no_friends" android:background="?attr/zenlyColorBackground" android:padding="@dimen/spacing_400" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:src="0x7f08038c" app:subtitle="@string/settings_ghost_title_selectfriendscansee"/>
+</RelativeLayout>

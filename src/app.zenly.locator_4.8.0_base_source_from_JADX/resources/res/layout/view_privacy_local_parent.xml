@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <app.zenly.android.base.widget.LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/spacer_200" android:showDividers="middle">
+        <ImageView android:layout_gravity="center" android:id="@+id/gls_avatar" android:layout_width="@dimen/avatar_size_300" android:layout_height="@dimen/avatar_size_300" android:layout_marginTop="@dimen/spacing_400"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3">
+            <app.zenly.locator.privacy.view.LocationGhostLocalSettingsView android:id="@+id/gls_location_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <app.zenly.locator.privacy.view.DurationGhostLocalSettingsView android:id="@+id/gls_duration_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </app.zenly.android.base.widget.LinearLayout>
+    <ProgressBar android:id="@+id/gls_progress_bar_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true"/>
+</merge>

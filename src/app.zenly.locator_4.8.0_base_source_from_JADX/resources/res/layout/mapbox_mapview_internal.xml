@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.mapbox.mapboxsdk.maps.widgets.CompassView android:id="@+id/compassView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/mapbox_compassContentDescription"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/logoView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/attributionView" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:contentDescription="@string/mapbox_attributionsIconContentDescription"/>
+</merge>

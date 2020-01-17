@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/user_profile_background" android:background="?attr/zenlyColorBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0"/>
+    <FrameLayout android:theme="@style/ThemeOverlay.Zenly.Light" android:id="@+id/user_profile_bottom_sheet" android:background="@drawable/smooth_rect_white_cr325" android:paddingTop="@dimen/spacing_200" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/elevation_300" app:layout_behavior="app.zenly.locator.view.ScreenBarBottomSheetBehavior">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/user_profile_friends_list" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <app.zenly.android.feature.polenta.widget.ScreenBarLayout android:id="@+id/user_profile_screen_bar_layout" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/list_item_profile_other_header"/>
+        </app.zenly.android.feature.polenta.widget.ScreenBarLayout>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

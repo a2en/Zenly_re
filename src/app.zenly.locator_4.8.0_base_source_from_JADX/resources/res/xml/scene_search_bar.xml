@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <Transition app:constraintSetEnd="@+id/focus" app:constraintSetStart="@+id/unfocus" app:duration="150" app:motionInterpolator="0"/>
+    <Transition app:constraintSetEnd="@+id/unfocus" app:constraintSetStart="@+id/focus" app:duration="150" app:motionInterpolator="0"/>
+    <Transition app:constraintSetEnd="@+id/focus_with_content" app:constraintSetStart="@+id/focus" app:duration="60" app:motionInterpolator="3"/>
+    <Transition app:constraintSetEnd="@+id/focus" app:constraintSetStart="@+id/focus_with_content" app:duration="60" app:motionInterpolator="3"/>
+    <Transition app:constraintSetEnd="@+id/focus_with_content" app:constraintSetStart="@+id/unfocus" app:duration="150" app:motionInterpolator="0"/>
+    <Transition app:constraintSetEnd="@+id/unfocus" app:constraintSetStart="@+id/focus_with_content" app:duration="150" app:motionInterpolator="0"/>
+    <StateSet app:defaultState="@+id/state_unfocus">
+        <State android:id="@+id/state_unfocus" app:constraints="@+id/unfocus"/>
+        <State android:id="@+id/state_focus" app:constraints="@+id/focus"/>
+        <State android:id="@+id/state_focus_with_content" app:constraints="@+id/focus_with_content"/>
+    </StateSet>
+    <ConstraintSet android:id="@+id/unfocus">
+        <Constraint android:id="@+id/view_input">
+            <PropertySet android:visibility="gone"/>
+        </Constraint>
+        <Constraint android:id="@+id/view_hint">
+            <PropertySet android:visibility="visible"/>
+            <Layout android:layout_width="wrap_content" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </Constraint>
+        <Constraint android:id="@+id/btn_clear">
+            <PropertySet android:visibility="invisible"/>
+        </Constraint>
+        <Constraint android:id="@+id/btn_cancel">
+            <PropertySet android:visibility="invisible"/>
+        </Constraint>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/focus">
+        <Constraint android:id="@+id/view_input">
+            <PropertySet android:visibility="visible"/>
+        </Constraint>
+        <Constraint android:id="@+id/view_hint">
+            <PropertySet android:visibility="visible"/>
+            <Layout android:layout_width="wrap_content" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </Constraint>
+        <Constraint android:id="@+id/btn_clear">
+            <PropertySet android:visibility="invisible"/>
+        </Constraint>
+        <Constraint android:id="@+id/btn_cancel">
+            <PropertySet android:visibility="visible"/>
+        </Constraint>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/focus_with_content">
+        <Constraint android:id="@+id/view_input">
+            <PropertySet android:visibility="visible"/>
+        </Constraint>
+        <Constraint android:id="@+id/view_hint">
+            <PropertySet android:visibility="invisible"/>
+            <Layout android:layout_width="wrap_content" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </Constraint>
+        <Constraint android:id="@+id/btn_clear">
+            <PropertySet android:visibility="visible"/>
+        </Constraint>
+        <Constraint android:id="@+id/btn_cancel">
+            <PropertySet android:visibility="visible"/>
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>

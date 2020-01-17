@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.zenly.android.base.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Section" android:textColor="?attr/zenlyTextColorSecondary" android:gravity="center" android:id="@+id/report_address" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/report_button_primary" android:padding="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_200" style="@style/Button.Large.Primary">
+        <androidx.appcompat.widget.AppCompatTextView android:id="@+id/report_button_primary_title" android:background="@null" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:autoSizeMaxTextSize="@dimen/font_size_h3" app:autoSizeMinTextSize="@dimen/font_size_h7" app:autoSizeTextType="1" style="@style/Button.Large.Primary"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/report_button_primary_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Polenta.ProgressBar"/>
+    </FrameLayout>
+</app.zenly.android.base.widget.LinearLayout>

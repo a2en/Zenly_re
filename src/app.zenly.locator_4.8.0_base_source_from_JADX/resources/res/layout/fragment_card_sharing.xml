@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.zenly.android.base.widget.ListeningHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.Zenly.Overlay" android:orientation="horizontal" android:id="@+id/scroll_view" android:scrollbars="none" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+    <app.zenly.android.base.widget.LinearLayout android:orientation="horizontal" android:id="@+id/scroll_view_container" android:paddingBottom="@dimen/spacing_200" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:showDividers="middle"/>
+</app.zenly.android.base.widget.ListeningHorizontalScrollView>

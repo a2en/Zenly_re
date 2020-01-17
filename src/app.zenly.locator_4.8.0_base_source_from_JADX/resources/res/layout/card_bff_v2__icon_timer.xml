@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <app.zenly.locator.core.widget.CircleProgressView android:id="@+id/streak_timer" android:layout_width="@dimen/grid_size_75" android:layout_height="@dimen/grid_size_75" android:layout_margin="@dimen/spacing_50" app:circleProgressStyle="1" app:circleStrokeSize="@dimen/spacing_50" app:inverted="true"/>
+</merge>

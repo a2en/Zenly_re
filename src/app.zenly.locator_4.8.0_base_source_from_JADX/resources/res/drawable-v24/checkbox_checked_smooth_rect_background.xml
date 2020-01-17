@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drawable xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" class="app.zenly.android.feature.polenta.graphics.drawable.SmoothRectDrawable">
+    <solid app:color="?attr/zenlyWidgetColorForeground"/>
+    <corners app:radiusRatio="@dimen/corner_radius_ratio_default"/>
+    <size app:height="@dimen/grid_size_200" app:width="@dimen/grid_size_200"/>
+</drawable>

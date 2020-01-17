@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:id="@+id/emoji_grid_recycler" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/spacing_200" android:paddingEnd="@dimen/spacing_200"/>
+    <ViewStub android:layout_gravity="center" android:id="@+id/emoji_lock_panel_stub" android:layout="@layout/emoji_lock_panel" android:inflatedId="@+id/emoji_lock_panel" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

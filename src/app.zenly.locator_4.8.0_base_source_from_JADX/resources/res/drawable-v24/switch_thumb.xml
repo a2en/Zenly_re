@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:height="@dimen/grid_size_150" android:width="@dimen/grid_size_150" android:drawable="@drawable/smooth_rect_gray_light" android:left="@dimen/spacing_50" android:top="@dimen/spacing_50" android:right="@dimen/spacing_50" android:bottom="@dimen/spacing_50"/>
+</layer-list>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.zenly.android.base.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.Zenly.Light" android:orientation="vertical" android:background="?attr/zenlyColorBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <app.zenly.android.feature.polenta.widget.ScreenBarLayout android:id="@+id/screen_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <app.zenly.android.feature.polenta.widget.ScreenBar android:id="@+id/screen_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/settings_home_title_settings"/>
+    </app.zenly.android.feature.polenta.widget.ScreenBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/settings_list" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</app.zenly.android.base.widget.LinearLayout>

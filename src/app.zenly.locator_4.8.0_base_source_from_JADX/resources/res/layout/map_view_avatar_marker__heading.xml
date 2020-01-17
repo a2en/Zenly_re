@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/marker_heading_traject" android:layout_width="match_parent" android:layout_height="match_parent" android:src="0x7f0802f1"/>
+    <app.zenly.android.base.widget.LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/marker_heading_speed" android:background="@drawable/circle_green_dark" android:layout_width="@dimen/grid_size_200" android:layout_height="@dimen/grid_size_200" android:alpha="0">
+        <TextView android:textAppearance="@style/TextAppearance.Capsule" android:textColor="@color/white" android:id="@+id/marker_heading_speed_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+        <TextView android:textAppearance="@style/TextAppearance.Caption" android:textSize="8sp" android:textColor="@color/white" android:id="@+id/marker_heading_speed_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4dp" android:includeFontPadding="false" android:textAllCaps="true"/>
+    </app.zenly.android.base.widget.LinearLayout>
+    <ImageView android:id="@+id/marker_heading_destination" android:padding="@dimen/spacing_50" android:layout_width="@dimen/grid_size_200" android:layout_height="@dimen/grid_size_200" android:alpha="0"/>
+</FrameLayout>

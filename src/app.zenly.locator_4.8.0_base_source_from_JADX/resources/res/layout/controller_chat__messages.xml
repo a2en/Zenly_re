@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.zenly.locator.core.p072ui.view.ChildViewPager xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/elevation_400" android:outlineProvider="none">
+    <View android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:theme="@style/ThemeOverlay.Zenly.Light" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/chat_messages" android:paddingTop="@dimen/grid_size_900" android:paddingBottom="@dimen/grid_size_250" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/chat_empty_view" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_200" android:translationX="@dimen/grid_size_650" app:layout_constraintBottom_toTopOf="@+id/chat_indicator" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:tint="@color/gray_light"/>
+        <include android:id="@+id/chat_indicator" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" layout="@layout/controller_chat__messages__activity_indicator"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:layout_width="match_parent" android:layout_height="match_parent"/>
+</app.zenly.locator.core.p072ui.view.ChildViewPager>

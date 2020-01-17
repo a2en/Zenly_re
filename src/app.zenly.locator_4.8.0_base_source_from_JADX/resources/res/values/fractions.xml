@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="opacity_0">0</fraction>
+    <fraction name="opacity_10">0.1</fraction>
+    <fraction name="opacity_100">1</fraction>
+    <fraction name="opacity_30">0.3</fraction>
+    <fraction name="opacity_50">0.5</fraction>
+    <fraction name="opacity_70">0.7</fraction>
+    <fraction name="opacity_90">0.9</fraction>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.zenly.android.base.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/spacer_100" android:showDividers="none|beginning|middle|end" style="@style/ListItem">
+    <TextView android:textAppearance="@style/TextAppearance.PrimaryBody" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <app.zenly.android.base.widget.LinearLayout android:orientation="vertical" android:id="@+id/bars_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/spacer_200" android:showDividers="middle"/>
+</app.zenly.android.base.widget.LinearLayout>

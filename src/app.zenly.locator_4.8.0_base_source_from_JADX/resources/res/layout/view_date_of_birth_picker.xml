@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <EditText android:gravity="center" android:id="@+id/year_view" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/signup_ageform_year_short" android:maxLength="4" android:layout_weight="1" android:inputType="date" android:imeOptions="actionNext" style="@style/EditText.Boxed"/>
+    <EditText android:gravity="center" android:id="@+id/month_view" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/signup_ageform_month_short" android:maxLength="2" android:layout_weight="1" android:inputType="date" android:imeOptions="actionNext" style="@style/EditText.Boxed"/>
+    <EditText android:gravity="center" android:id="@+id/day_view" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/signup_ageform_day_short" android:maxLength="2" android:layout_weight="1" android:inputType="date" android:imeOptions="actionNext" style="@style/EditText.Boxed"/>
+</merge>

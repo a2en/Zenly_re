@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <app.zenly.android.feature.polenta.widget.ScreenBarLayout android:id="@+id/gls_screen_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <app.zenly.android.feature.polenta.widget.ScreenBar android:id="@+id/gls_screen_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </app.zenly.android.feature.polenta.widget.ScreenBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/gls_screen_bar_layout">
+        <app.zenly.android.base.widget.LinearLayout android:orientation="vertical" android:padding="@dimen/spacing_200" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/spacer_100" android:showDividers="middle">
+            <include android:id="@+id/gls_area_precise" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_privacy_local_location__item"/>
+            <include android:id="@+id/gls_area_blurred" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_privacy_local_location__item"/>
+            <include android:id="@+id/gls_area_frozen" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_privacy_local_location__item"/>
+        </app.zenly.android.base.widget.LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</merge>

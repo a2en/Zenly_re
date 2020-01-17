@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.zenly.locator.map.view.MapCapsuleView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:iconBackground="@drawable/circle_green" app:iconSrc="0x7f0802f1" app:iconTint="@color/green_dark" app:textEndIconSrc="0x7f080299" app:title="@string/contextView_capsule_heading_arrival" style="@style/Widget.MapCapsuleView.Gray"/>

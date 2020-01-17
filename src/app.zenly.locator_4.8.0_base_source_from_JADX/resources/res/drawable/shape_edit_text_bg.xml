@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <padding android:top="@dimen/chat_text_input_view_text_padding_vertical" android:bottom="@dimen/chat_text_input_view_text_padding_vertical"/>
+    <solid android:color="@color/transparent"/>
+</shape>

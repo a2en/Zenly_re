@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <app.zenly.locator.map.view.CompassView android:id="@+id/compass" android:layout_width="@dimen/compass_marker_width" android:layout_height="@dimen/compass_marker_height"/>
+</merge>

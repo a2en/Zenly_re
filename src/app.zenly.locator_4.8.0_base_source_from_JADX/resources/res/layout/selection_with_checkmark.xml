@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="@dimen/spacing_100" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/image" android:layout_width="@dimen/avatar_size_200" android:layout_height="@dimen/avatar_size_200" android:layout_marginTop="@dimen/spacing_100" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <Space android:id="@+id/space" android:layout_width="@dimen/spacing_50" android:layout_height="@dimen/spacing_50" app:layout_constraintBottom_toTopOf="@+id/image" app:layout_constraintStart_toEndOf="@+id/image"/>
+    <androidx.appcompat.widget.AppCompatCheckBox android:id="@+id/check_box" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@+id/space" app:layout_constraintTop_toTopOf="@+id/space" style="@style/Widget.Polenta.CheckBox.Outlined"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

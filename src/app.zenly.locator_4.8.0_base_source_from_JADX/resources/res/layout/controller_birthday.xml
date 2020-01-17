@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.Zenly.Light" android:background="?attr/zenlyColorBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <app.zenly.android.feature.polenta.widget.ScreenBar android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/settings_manage_button_edit_birthday"/>
+    <app.zenly.android.base.widget.LinearLayout android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:padding="@dimen/spacing_600" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <app.zenly.android.base.widget.LinearLayout android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.Callout" android:textColor="?attr/zenlyTextColorSecondaryAccent" android:id="@+id/age_title1" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <app.zenly.locator.core.p072ui.view.CustomEditText android:id="@+id/age_edittext1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:inputType="number" style="@style/Onboarding.DateComponent"/>
+        </app.zenly.android.base.widget.LinearLayout>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <app.zenly.android.base.widget.LinearLayout android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.Callout" android:textColor="?attr/zenlyTextColorSecondaryAccent" android:id="@+id/age_title2" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <app.zenly.locator.core.p072ui.view.CustomEditText android:id="@+id/age_edittext2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:inputType="number" style="@style/Onboarding.DateComponent"/>
+        </app.zenly.android.base.widget.LinearLayout>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <app.zenly.android.base.widget.LinearLayout android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.Callout" android:textColor="?attr/zenlyTextColorSecondaryAccent" android:id="@+id/age_title3" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <app.zenly.locator.core.p072ui.view.CustomEditText android:id="@+id/age_edittext3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:inputType="number" style="@style/Onboarding.DateComponent"/>
+        </app.zenly.android.base.widget.LinearLayout>
+    </app.zenly.android.base.widget.LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/validate_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_200" android:src="0x7f0802ab" style="@style/ImageButton.Large.Primary"/>
+</FrameLayout>

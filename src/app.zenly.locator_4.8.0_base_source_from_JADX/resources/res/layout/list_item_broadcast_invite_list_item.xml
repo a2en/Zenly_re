@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.zenly.android.base.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="?attr/selectableItemBackground" android:paddingTop="@dimen/spacing_50" android:paddingBottom="@dimen/spacing_50" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/logo" android:layout_width="@dimen/grid_size_400" android:layout_height="@dimen/grid_size_400"/>
+    <TextView android:textAppearance="@style/TextAppearance.Subtitle" android:textColor="?attr/zenlyTextColorSecondary" android:ellipsize="end" android:gravity="center" android:id="@+id/app_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_100" android:maxLines="1"/>
+</app.zenly.android.base.widget.LinearLayout>

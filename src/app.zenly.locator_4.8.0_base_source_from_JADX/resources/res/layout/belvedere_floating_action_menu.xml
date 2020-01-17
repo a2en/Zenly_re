@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/floating_action_menu_fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f08005f" android:tint="@color/belvedere_floating_action_menu_icon_color" app:fabSize="0" app:useCompatPadding="true"/>
+</LinearLayout>

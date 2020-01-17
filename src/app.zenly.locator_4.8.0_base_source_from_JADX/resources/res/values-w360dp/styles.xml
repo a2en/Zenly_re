@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Onboarding.DateComponent">
+        <item name="android:textAppearance">@style/TextAppearance.Headline</item>
+        <item name="android:minWidth">88dp</item>
+    </style>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/list_item_static_click_area" android:background="@drawable/belvedere_round_corner_background" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="125dp" android:foreground="?android:attr/selectableItemBackground" android:contentDescription="@string/belvedere_stream_item_camera_tile_desc">
+        <ImageView android:layout_gravity="center" android:id="@+id/list_item_static_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080061"/>
+    </FrameLayout>
+</LinearLayout>

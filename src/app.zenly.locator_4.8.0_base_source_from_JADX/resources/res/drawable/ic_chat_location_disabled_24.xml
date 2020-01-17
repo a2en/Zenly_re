@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:drawable="@drawable/circle_gray_heavy"/>
+    <item>
+        <bitmap android:src="0x7f080304" android:tint="@color/gray_black"/>
+    </item>
+</layer-list>

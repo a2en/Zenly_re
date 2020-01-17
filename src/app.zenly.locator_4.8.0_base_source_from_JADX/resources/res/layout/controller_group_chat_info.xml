@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/group_chat_info_background" android:background="?attr/zenlyColorBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0"/>
+    <FrameLayout android:theme="@style/ThemeOverlay.Zenly.Light" android:id="@+id/group_info_bottom_sheet" android:background="@drawable/smooth_rect_white_cr325" android:paddingTop="@dimen/spacing_200" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/elevation_300" app:layout_behavior="app.zenly.locator.view.ScreenBarBottomSheetBehavior">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/members" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <app.zenly.android.feature.polenta.widget.ScreenBarLayout android:id="@+id/group_info_screen_bar_layout" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/group_chat_info_action" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/group_chat_info_action"/>
+        </app.zenly.android.feature.polenta.widget.ScreenBarLayout>
+    </FrameLayout>
+    <ViewStub android:id="@+id/group_chat_left_stub" android:layout="@layout/controller_group_chat_info__panel_left" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

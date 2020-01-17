@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ViewStub android:layout_gravity="center" android:id="@+id/marker_dot_default" android:layout="@layout/map_view_avatar_marker__dot_default" android:layout_width="@dimen/avatar_marker_dot_default_size" android:layout_height="@dimen/avatar_marker_dot_default_size"/>
+    <ViewStub android:layout_gravity="center" android:id="@+id/marker_dot_heading" android:layout="@layout/map_view_avatar_marker__dot_heading" android:layout_width="@dimen/avatar_marker_dot_heading_size" android:layout_height="@dimen/avatar_marker_dot_heading_size"/>
+    <ViewStub android:layout_gravity="center" android:id="@+id/marker_dot_sleeping" android:layout="@layout/map_view_avatar_marker__dot_sleeping" android:layout_width="@dimen/avatar_marker_dot_sleeping_size" android:layout_height="@dimen/avatar_marker_dot_sleeping_size"/>
+</FrameLayout>

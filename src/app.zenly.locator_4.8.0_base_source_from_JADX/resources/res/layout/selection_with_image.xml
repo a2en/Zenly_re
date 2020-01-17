@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingBottom="@dimen/spacing_200" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/spacing_100" android:paddingEnd="@dimen/spacing_100">
+    <ImageView android:id="@+id/image" android:layout_width="@dimen/avatar_size_200" android:layout_height="@dimen/avatar_size_200" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <ImageView android:id="@+id/group_avatar_1" android:layout_width="@dimen/avatar_size_125" android:layout_height="@dimen/avatar_size_125" app:layout_constraintStart_toStartOf="@+id/image" app:layout_constraintTop_toTopOf="@+id/image"/>
+    <Space android:id="@+id/border_spacing" android:layout_width="1dp" android:layout_height="1dp" app:layout_constraintStart_toEndOf="@+id/image" app:layout_constraintTop_toBottomOf="@+id/image"/>
+    <ImageView android:id="@+id/group_avatar_2" android:padding="1dp" android:layout_width="@dimen/avatar_size_125" android:layout_height="@dimen/avatar_size_125" app:layout_constraintBottom_toBottomOf="@+id/border_spacing" app:layout_constraintEnd_toEndOf="@+id/border_spacing"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

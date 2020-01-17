@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="40080000" android:versionName="4.8.0" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="app.zenly.locator" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission-sdk-23 android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" android:maxSdkVersion="22"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission-sdk-23 android:name="android.permission.BLUETOOTH"/>
+    <uses-permission-sdk-23 android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <application android:theme="@style/Theme.Zenly" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="app.zenly.locator.ZenlyApplication" android:allowBackup="false" android:supportsRtl="false" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:resizeableActivity="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:isSplitRequired="true">
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <activity android:theme="@style/Theme.Zenly.Splash" android:name="app.zenly.locator.MainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:scheme="http"/>
+                <data android:host="zen.ly"/>
+                <data android:pathPrefix="/"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:name="app.zenly.locator.ui.activities.RouterActivity" android:targetActivity="app.zenly.locator.MainActivity"/>
+        <activity-alias android:name="app.zenly.locator.AppIconsStar" android:targetActivity="app.zenly.locator.MainActivity"/>
+        <activity-alias android:name="app.zenly.locator.AppIconsVip" android:targetActivity="app.zenly.locator.MainActivity"/>
+        <activity-alias android:name="app.zenly.locator.AppIconsLeader" android:targetActivity="app.zenly.locator.MainActivity"/>
+        <activity android:name="app.zenly.locator.block.BlockUserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/Theme.Zenly.Translucent" android:name="app.zenly.locator.cards.CardSwitcherActivity"/>
+        <activity android:theme="@style/Theme.Zenly.Translucent" android:name="app.zenly.locator.core.p072ui.activity.ChangeAvatarActivity"/>
+        <activity android:name="app.zenly.locator.core.p072ui.activity.MajorUpdateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Theme.NoDisplay" android:label="@string/chat_copydialog_title_copytext" android:icon="@drawable/ic_copy_text" android:name="app.zenly.locator.core.p072ui.activity.CopyToClipboardActivity" android:exported="false"/>
+        <activity android:theme="@style/Theme.NoDisplay" android:name="app.zenly.locator.core.p072ui.activity.ForwardIntentActivity" android:exported="false"/>
+        <activity android:theme="@style/Theme.Zenly.Translucent" android:name="app.zenly.locator.core.invitations.AppShareSheetActivity"/>
+        <activity android:theme="@style/Theme.Zenly.Black.Viewer" android:name="app.zenly.locator.media.MediaViewerActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.Zenly.Black" android:name="app.zenly.locator.media.TakePictureActivity" android:screenOrientation="portrait"/>
+        <activity android:name="app.zenly.locator.onboarding.activity.SignupActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="app.zenly.locator.powermoves.PowerMovesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="app.zenly.locator.support.SupportActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/Theme.Zenly.Zendesk" android:name="zendesk.support.request.RequestActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="app.zenly.locator.username.UsernameInputActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="app.zenly.locator.username.idcard.CardPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="app.zenly.locator.descendants.DescendantsListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="app.zenly.locator.recommendation.RecommendationActivity" android:screenOrientation="portrait"/>
+        <receiver android:name="app.zenly.locator.notifications.NotificationChannelsHelper$LocaleChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="app.zenly.locator.onboarding.content.SmsRetrievedReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="app.zenly.locator.PackageUpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="app.zenly.locator.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_file_paths"/>
+        </provider>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/config_googleMap_token"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="firebase_analytics_collection_deactivated" android:value="true"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="1863027eccd783eb358173617f229e4292b48921"/>
+        <meta-data android:name="com.snapchat.kit.sdk.clientId" android:value="e0d0b8fc-cfd9-49d3-8fea-5ff0843fc306"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <service android:name="com.evernote.android.job.v21.PlatformJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.evernote.android.job.v14.PlatformAlarmService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.evernote.android.job.v14.PlatformAlarmServiceExact" android:exported="false"/>
+        <receiver android:name="com.evernote.android.job.v14.PlatformAlarmReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.evernote.android.job.v14.RUN_JOB"/>
+                <action android:name="net.vrallev.android.job.v14.RUN_JOB"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.evernote.android.job.JobBootReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.evernote.android.job.gcm.PlatformGcmService" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" android:enabled="false" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.evernote.android.job.JobRescheduleService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:label="@string/zs_view_article_loading_title" android:name="zendesk.support.guide.ViewArticleActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:label="@string/support_activity_title" android:name="zendesk.support.guide.HelpCenterActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/request_list_activity_title" android:name="zendesk.support.requestlist.RequestListActivity"/>
+        <receiver android:name="zendesk.support.DeepLinkingBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="zendesk.support"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="zendesk.support.SupportSdkStartupProvider" android:enabled="true" android:exported="false" android:authorities="app.zenly.locator.zendesk.support.SupportSdkStartupProvider"/>
+        <activity android:theme="@style/PlacesAutocompleteThemeOverlay" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:exported="false" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateVisible|stateAlwaysVisible|adjustPan" android:hardwareAccelerated="true"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="app.zenly.locator.firebaseinitprovider" android:initOrder="100"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <provider android:name="zendesk.belvedere.BelvedereFileProvider" android:readPermission="true" android:exported="false" android:authorities="app.zenly.locator.belvedere2.attachments" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/belvedere_attachment_storage_v2"/>
+        </provider>
+        <provider android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider" android:exported="false" android:authorities="app.zenly.locator.mapboxtelemetryinitprovider" android:initOrder="100"/>
+        <service android:name="p213co.znly.core.push.MessageReceiver" android:enabled="true" android:exported="true" android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="p213co.znly.core.authenticator.ZenlyCoreAuthenticatorService" android:enabled="true" android:exported="true" android:directBootAware="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <provider android:label="@string/co_znly_core_sync_adapter_provider_label" android:name="p213co.znly.core.content_provider.ZenlyCoreContentProvider" android:exported="false" android:authorities="@string/co_znly_core_sync_adapter_authority" android:syncable="true"/>
+        <service android:name="p213co.znly.core.sync_adapter.ZenlyCoreSyncService" android:enabled="true" android:exported="true" android:directBootAware="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/sync_adapter"/>
+        </service>
+        <service android:name="p213co.znly.core.location.LocationService" android:enabled="true" android:exported="true" android:directBootAware="true" android:foregroundServiceType="8"/>
+        <receiver android:name="p213co.znly.core.push.FirebaseHeartbeatReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="co.znly.core.push.firebase.intent.action.HEARTBEAT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="p213co.znly.core.scheduling.AddReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.evernote.android.job.ADD_JOB_CREATOR"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="p213co.znly.core.geofences.GeofencesBroadcastReceiver" android:enabled="true" android:exported="true"/>
+        <provider android:name="com.crashlytics.android.CrashlyticsInitProvider" android:exported="false" android:authorities="app.zenly.locator.crashlyticsinitprovider" android:initOrder="90"/>
+        <provider android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="app.zenly.locator.lifecycle-process"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.vending.splits" android:value="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

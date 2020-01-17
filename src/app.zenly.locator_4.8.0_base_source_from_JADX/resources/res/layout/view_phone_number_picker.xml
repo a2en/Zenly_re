@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <app.zenly.android.base.widget.LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@+id/prefix_view" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintBottom_toTopOf="@+id/phone_picker_next" app:layout_constraintEnd_toStartOf="@+id/phone_picker_number" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/phone_picker_brazil_warning" style="@style/EditText.Boxed">
+        <ImageView android:id="@+id/prefix_flag_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textAppearance="@style/TextAppearance.PrimaryBody" android:textColor="?attr/zenlyTextColorPrimary" android:id="@+id/prefix_number_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_100"/>
+    </app.zenly.android.base.widget.LinearLayout>
+    <EditText android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/number_view" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/support_change_phone_number_phone_number_field_placeholder" android:layout_weight="1" android:inputType="phone" android:imeOptions="actionNext" style="@style/EditText.Boxed"/>
+</merge>

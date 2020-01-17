@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/nav_graph" app:startDestination="@+id/powerMoveFeedFragment">
+    <fragment android:label="fragment_power_move_feed" android:name="app.zenly.locator.powermoves.p133ui.feed.PowerMoveFeedFragment" android:id="@+id/powerMoveFeedFragment">
+        <action android:id="@+id/action_powerMoveFeedFragment_to_powerMoveStoryDialogFragment" app:destination="@+id/powerMoveStoryDialogFragment"/>
+        <action android:id="@+id/action_powerMoveFeedFragment_to_giftCongratsDialogFragment" app:destination="@+id/giftCongratsDialogFragment"/>
+        <action android:id="@+id/action_powerMoveFeedFragment_to_giftWallpaperDialogFragment" app:destination="@+id/giftWallpaperDialogFragment"/>
+    </fragment>
+    <dialog android:label="dialog_fragment_power_move_story" android:name="app.zenly.locator.powermoves.p133ui.story.PowerMoveStoryDialogFragment" android:id="@+id/powerMoveStoryDialogFragment">
+        <argument android:name="powerMoveId" app:argType="string"/>
+    </dialog>
+    <dialog android:label="dialog_fragment_gift_congrats" android:name="app.zenly.locator.powermoves.p133ui.gift.GiftCongratsDialogFragment" android:id="@+id/giftCongratsDialogFragment">
+        <action android:id="@+id/action_giftCongratsDialogFragment_to_giftWallpaperDialogFragment" app:destination="@+id/giftWallpaperDialogFragment" app:popUpTo="@+id/giftCongratsDialogFragment" app:popUpToInclusive="true"/>
+    </dialog>
+    <dialog android:label="dialog_fragment_gift_wallpaper" android:name="app.zenly.locator.powermoves.p133ui.gift.GiftWallpaperDialogFragment" android:id="@+id/giftWallpaperDialogFragment"/>
+</navigation>

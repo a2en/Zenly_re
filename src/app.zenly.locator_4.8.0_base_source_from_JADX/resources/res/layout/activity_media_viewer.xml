@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.zenly.locator.core.widget.ElasticDragDismissFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/draggable_frame" android:layout_width="match_parent" android:layout_height="match_parent" app:dragDismissFraction="0.1" app:dragElasticity="4">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </androidx.core.widget.NestedScrollView>
+</app.zenly.locator.core.widget.ElasticDragDismissFrameLayout>

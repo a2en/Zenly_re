@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cards_descendantsWorldwideRanking_count">
+        <item quantity="one">%1$d Pops</item>
+        <item quantity="other">%1$d Pops</item>
+    </plurals>
+    <plurals name="cards_descendantsWorldwideRanking_notRanked_trivia">
+        <item quantity="one">You need %1$d Pops to see your rank</item>
+        <item quantity="other">You need %1$d Pops to see your rank</item>
+    </plurals>
+    <plurals name="cards_descendants_button_seeNew">
+        <item quantity="one">See %1$d new Pops</item>
+        <item quantity="other">See %1$d new Pops</item>
+    </plurals>
+    <plurals name="cards_descendants_subtitle_myProfile">
+        <item quantity="one">joined Zenly thanks to you</item>
+        <item quantity="other">joined Zenly thanks to you</item>
+    </plurals>
+    <plurals name="cards_descendants_subtitle_profileOther">
+        <item quantity="one">joined Zenly thanks to %2$s</item>
+        <item quantity="other">joined Zenly thanks to %2$s</item>
+    </plurals>
+    <plurals name="cards_descendants_title">
+        <item quantity="one">person</item>
+        <item quantity="other">people</item>
+    </plurals>
+    <plurals name="cards_watchers_friends_nb">
+        <item quantity="one">friend</item>
+        <item quantity="other">friends</item>
+    </plurals>
+    <plurals name="cards_watchers_watched_nb">
+        <item quantity="one">Time</item>
+        <item quantity="other">Times</item>
+    </plurals>
+    <plurals name="chat_emojiUnlock_label_descendant">
+        <item quantity="one">Convince a friend to join Zenly to unlock these emojis.</item>
+        <item quantity="other">Convince %1$d friends to join Zenly to unlock these emojis.</item>
+    </plurals>
+    <plurals name="chat_emojiUnlock_label_friends">
+        <item quantity="one">You need %1$d friend to unlock these emojis.</item>
+        <item quantity="other">You need %1$d friends to unlock these emojis.</item>
+    </plurals>
+    <plurals name="chat_emojiUnlock_subtitle_descendant">
+        <item quantity="one">%1$d more friend to convince</item>
+        <item quantity="other">%1$d more friends to convince</item>
+    </plurals>
+    <plurals name="chat_emojiUnlock_subtitle_friend">
+        <item quantity="one">%1$d more friend to go</item>
+        <item quantity="other">%1$d more friends to go</item>
+    </plurals>
+    <plurals name="chat_label_newmessages">
+        <item quantity="one">%1$d new message</item>
+        <item quantity="other">%1$d new messages</item>
+    </plurals>
+    <plurals name="cldr_unit_duration_day_long">
+        <item quantity="one">%1$d day</item>
+        <item quantity="other">%1$d days</item>
+    </plurals>
+    <plurals name="cldr_unit_duration_day_narrow">
+        <item quantity="one">%1$sd</item>
+        <item quantity="other">%1$sd</item>
+    </plurals>
+    <plurals name="cldr_unit_duration_day_short">
+        <item quantity="one">%1$d day</item>
+        <item quantity="other">%1$d days</item>
+    </plurals>
+    <plurals name="cldr_unit_duration_hour_long">
+        <item quantity="one">%1$d hour</item>
+        <item quantity="other">%1$d hours</item>
+    </plurals>
+    <plurals name="cldr_unit_duration_hour_narrow">
+        <item quantity="one">%1$sh</item>
+        <item quantity="other">%1$sh</item>
+    </plurals>
+    <plurals name="cldr_unit_duration_hour_short">
+        <item quantity="one">%1$d hr</item>
+        <item quantity="other">%1$d hr</item>
+    </plurals>
+    <plurals name="cldr_unit_duration_minute_long">
+        <item quantity="one">%1$d minute</item>
+        <item quantity="other">%1$d minutes</item>
+    </plurals>
+    <plurals name="cldr_unit_duration_minute_narrow">
+        <item quantity="one">%1$sm</item>
+        <item quantity="other">%1$sm</item>
+    </plurals>
+    <plurals name="cldr_unit_duration_minute_short">
+        <item quantity="one">%1$d min</item>
+        <item quantity="other">%1$d min</item>
+    </plurals>
+    <plurals name="cldr_unit_length_foot_narrow">
+        <item quantity="one">%1$s ft</item>
+        <item quantity="other">%1$s ft</item>
+    </plurals>
+    <plurals name="cldr_unit_length_kilometer_narrow">
+        <item quantity="one">%1$skm</item>
+        <item quantity="other">%1$skm</item>
+    </plurals>
+    <plurals name="cldr_unit_length_meter_narrow">
+        <item quantity="one">%1$sm</item>
+        <item quantity="other">%1$sm</item>
+    </plurals>
+    <plurals name="cldr_unit_length_mile_narrow">
+        <item quantity="one">%1$smi</item>
+        <item quantity="other">%1$smi</item>
+    </plurals>
+    <plurals name="cldr_unit_speed_kilometerPerHour_narrow">
+        <item quantity="one">%1$skm/h</item>
+        <item quantity="other">%1$skm/h</item>
+    </plurals>
+    <plurals name="cldr_unit_speed_milePerHour_narrow">
+        <item quantity="one">%1$smph</item>
+        <item quantity="other">%1$smph</item>
+    </plurals>
+    <plurals name="cldr_unit_weather_celsius_short">
+        <item quantity="one">%1$s°C</item>
+        <item quantity="other">%1$s°C</item>
+    </plurals>
+    <plurals name="cldr_unit_weather_fahrenheit_short">
+        <item quantity="one">%1$s°F</item>
+        <item quantity="other">%1$s°F</item>
+    </plurals>
+    <plurals name="commons_label_friendship_daysago">
+        <item quantity="one">Friends for %d day</item>
+        <item quantity="other">Friends for %d days</item>
+    </plurals>
+    <plurals name="commons_label_invitation_daysago">
+        <item quantity="one">Invited %d day ago</item>
+        <item quantity="other">Invited %d days ago</item>
+    </plurals>
+    <plurals name="commons_label_others">
+        <item quantity="one">%1$d other</item>
+        <item quantity="other">%1$d others</item>
+    </plurals>
+    <plurals name="count_formatter_contactsOnZenly_normal">
+        <item quantity="one">Knows %,d people on Zenly</item>
+        <item quantity="other">Knows %,d people on Zenly</item>
+    </plurals>
+    <plurals name="count_formatter_contactsOnZenly_plus">
+        <item quantity="one">Knows %,d+ people on Zenly</item>
+        <item quantity="other">Knows %,d+ people on Zenly</item>
+    </plurals>
+    <plurals name="count_formatter_friendsOnZenly_normal">
+        <item quantity="one">%,d friend on Zenly</item>
+        <item quantity="other">%,d friends on Zenly</item>
+    </plurals>
+    <plurals name="count_formatter_friendsOnZenly_plus">
+        <item quantity="one">%,d+ friend on Zenly</item>
+        <item quantity="other">%,d+ friends on Zenly</item>
+    </plurals>
+    <plurals name="count_formatter_friends_normal">
+        <item quantity="one">%,d friend</item>
+        <item quantity="other">%,d friends</item>
+    </plurals>
+    <plurals name="count_formatter_friends_plus">
+        <item quantity="one">%,d+ friend</item>
+        <item quantity="other">%,d+ friends</item>
+    </plurals>
+    <plurals name="count_formatter_normal">
+        <item quantity="one">%,d</item>
+        <item quantity="other">%,d</item>
+    </plurals>
+    <plurals name="count_formatter_plus">
+        <item quantity="one">%,d+</item>
+        <item quantity="other">%,d+</item>
+    </plurals>
+    <plurals name="descendantsList_churnedLabel">
+        <item quantity="one">and %1$d Pops</item>
+        <item quantity="other">and %1$d Pops</item>
+    </plurals>
+    <plurals name="emojiUnlock_success_subtitle_captain">
+        <item quantity="one">%1$d friend, squad!</item>
+        <item quantity="other">%1$d friends, squad!</item>
+    </plurals>
+    <plurals name="emojiUnlock_success_subtitle_expert">
+        <item quantity="one">Your first %1$d friend!</item>
+        <item quantity="other">Your first %1$d friends!</item>
+    </plurals>
+    <plurals name="emojiUnlock_success_subtitle_mvp">
+        <item quantity="one">%1$d friend deep!</item>
+        <item quantity="other">%1$d friends deep!</item>
+    </plurals>
+    <plurals name="emojiUnlock_success_subtitle_pro">
+        <item quantity="one">Way to convince your friend!</item>
+        <item quantity="other">Way to convince your friend!</item>
+    </plurals>
+    <plurals name="emojiUnlock_success_subtitle_star">
+        <item quantity="one">Way to convince your friends!</item>
+        <item quantity="other">Way to convince your friends!</item>
+    </plurals>
+    <plurals name="friendRequest_subtitle_mutualFriends_many">
+        <item quantity="one">%1$d mutual friend including %2$s.</item>
+        <item quantity="other">%1$d mutual friends including %2$s.</item>
+    </plurals>
+    <plurals name="friendshipFacts_friendship_cards_days">
+        <item quantity="one">Day old</item>
+        <item quantity="other">Days old</item>
+    </plurals>
+    <plurals name="friendshipFacts_hangouts_cards_occurrences">
+        <item quantity="one">Time together</item>
+        <item quantity="other">Times together</item>
+    </plurals>
+    <plurals name="friendshipFacts_time_cards_number">
+        <item quantity="one">Hour</item>
+        <item quantity="other">Hours</item>
+    </plurals>
+    <plurals name="friendshipFacts_time_cards_weeks">
+        <item quantity="one">week</item>
+        <item quantity="other">weeks</item>
+    </plurals>
+    <plurals name="gchat_members_count">
+        <item quantity="one">%1$d member</item>
+        <item quantity="other">%1$d members</item>
+    </plurals>
+    <plurals name="mediapicker_selection_limit_reached">
+        <item quantity="one">You can only share up to %1$d item at the same time.</item>
+        <item quantity="other">You can only share up to %1$d items at the same time.</item>
+    </plurals>
+    <plurals name="newfriend_request_mutualfriends">
+        <item quantity="one">%1$d mutual friend</item>
+        <item quantity="other">%1$d mutual friends</item>
+    </plurals>
+    <plurals name="onboarding_support_block_message_days">
+        <item quantity="one">You have been blocked by too many people these past few months.\10\10This suspension is temporary.\10\10You’ll be free to roam Zenly again in %1$d day.</item>
+        <item quantity="other">You have been blocked by too many people these past few months.\10\10This suspension is temporary.\10\10You’ll be free to roam Zenly again in %1$d days.</item>
+    </plurals>
+    <plurals name="onboarding_support_block_message_hours">
+        <item quantity="one">You have been blocked by too many people these past few months.\10\10This suspension is temporary.\10\10You’ll be free to roam Zenly again in %1$d hour.</item>
+        <item quantity="other">You have been blocked by too many people these past few months.\10\10This suspension is temporary.\10\10You’ll be free to roam Zenly again in %1$d hours.</item>
+    </plurals>
+    <plurals name="onboarding_support_deactivation_message">
+        <item quantity="one">Your account is scheduled for deletion in %1$d day.\10\10Deletion is permanent.\10\10If you change your mind tap &quot;Reactivate&quot; below.</item>
+        <item quantity="other">Your account is scheduled for deletion in %1$d days.\10\10Deletion is permanent.\10\10If you change your mind tap &quot;Reactivate&quot; below.</item>
+    </plurals>
+    <plurals name="onboarding_support_gpdr_message">
+        <item quantity="one">A new european law (GDPR) prevents people your age from using Zenly in your country without your parents’ consent.\10\10We’re very sorry but you’ll have to wait %1$d day before you can come back.\10\10Meanwhile, your account has been deactivated.</item>
+        <item quantity="other">A new european law (GDPR) prevents people your age from using Zenly in your country without your parents’ consent.\10\10We’re very sorry but you’ll have to wait %1$d days before you can come back.\10\10Meanwhile, your account has been deactivated.</item>
+    </plurals>
+    <plurals name="onboarding_support_suspension_message">
+        <item quantity="one">You haven’t respected our Terms and Conditions.\10\10This suspension is temporary.\10\10You’ll be free to roam Zenly again in %1$d day.</item>
+        <item quantity="other">You haven’t respected our Terms and Conditions.\10\10This suspension is temporary.\10\10You’ll be free to roam Zenly again in %1$d days.</item>
+    </plurals>
+    <plurals name="ping_pack_button_addfriends">
+        <item quantity="one">Add %1$d friend</item>
+        <item quantity="other">Add %1$d friends</item>
+    </plurals>
+    <plurals name="profile_bestFriends_count">
+        <item quantity="one">%1$d Best Friend</item>
+        <item quantity="other">%1$d Best Friends</item>
+    </plurals>
+    <plurals name="profile_friendshipFacts_locked_subtitle">
+        <item quantity="one">You need %1$d more friend</item>
+        <item quantity="other">You need %1$d more friends</item>
+    </plurals>
+    <plurals name="profile_streak">
+        <item quantity="one">You opened Zenly %d day in a row</item>
+        <item quantity="other">You opened Zenly %d days in a row</item>
+    </plurals>
+    <plurals name="profile_watchers_content">
+        <item quantity="one">%2$s time</item>
+        <item quantity="other">%2$s times</item>
+    </plurals>
+    <plurals name="profile_watchers_locked_subtitle">
+        <item quantity="one">%2$s more friend to unlock</item>
+        <item quantity="other">%2$s more friends to unlock</item>
+    </plurals>
+    <plurals name="recommendation_matchmaker_list_cta">
+        <item quantity="one">Recommend %1$d friend</item>
+        <item quantity="other">Recommend %1$d friends</item>
+    </plurals>
+    <plurals name="settings_blocked_subtitle">
+        <item quantity="one">You have blocked %1$d user</item>
+        <item quantity="other">You have blocked %1$d users</item>
+    </plurals>
+    <plurals name="settings_ghost_alert_label_hours_unif">
+        <item quantity="one">%1$d hour</item>
+        <item quantity="other">%1$d hours</item>
+    </plurals>
+    <plurals name="settings_ghost_title_selectedsetsettings">
+        <item quantity="one">Choose your location for this friend:</item>
+        <item quantity="other">Choose your location for these %1$d friends:</item>
+    </plurals>
+    <plurals name="settings_inputcode_label_timer">
+        <item quantity="one">You can ask for a new code in %1$d second, buddy</item>
+        <item quantity="other">You can ask for a new code in %1$d seconds, buddy</item>
+    </plurals>
+    <plurals name="signup_code_autoverify_countdown">
+        <item quantity="one">Manual verification\10in %1$d second</item>
+        <item quantity="other">Manual verification\10in %1$d seconds</item>
+    </plurals>
+    <plurals name="signup_relog_daysCount_generic">
+        <item quantity="one">You joined Zenly %1$d day ago.</item>
+        <item quantity="other">You joined Zenly %1$d days ago.</item>
+    </plurals>
+    <plurals name="spamPrevention_modal_button_manage_subtitle">
+        <item quantity="one">%1$d pending invite</item>
+        <item quantity="other">%1$d pending invites</item>
+    </plurals>
+    <plurals name="spamPrevention_view_header_invites">
+        <item quantity="one">%1$d pending invite</item>
+        <item quantity="other">%1$d pending invites</item>
+    </plurals>
+    <plurals name="support_places_main_lastVisit_days">
+        <item quantity="one">Last visit %1$d day ago</item>
+        <item quantity="other">Last visit %1$d days ago</item>
+    </plurals>
+    <plurals name="support_places_main_more_subtitle">
+        <item quantity="one">%1$d old place</item>
+        <item quantity="other">%1$d old places</item>
+    </plurals>
+    <plurals name="timetogether_hidden_modal_timespent">
+        <item quantity="one">You’ve seen %2$s for more than %1$d hour over the last 7 days.</item>
+        <item quantity="other">You’ve seen %2$s for more than %1$d hours over the last 7 days.</item>
+    </plurals>
+    <plurals name="timetogether_hidden_modal_timespent_min">
+        <item quantity="one">You’ve spent time with %2$s for more than %1$d minute over the last 7 days.</item>
+        <item quantity="other">You’ve spent time with %2$s for more than %1$d minute over the last 7 days.</item>
+    </plurals>
+    <plurals name="timetogether_hidden_modal_timespent_min_short">
+        <item quantity="one">You’ve spent time with %2$s for more than %1$d minute.</item>
+        <item quantity="other">You’ve spent time with %2$s for more than %1$d minute.</item>
+    </plurals>
+    <plurals name="timetogether_hidden_modal_timespent_short">
+        <item quantity="one">You’ve spent time with %2$s for more than %1$d hour.</item>
+        <item quantity="other">You’ve spent time with %2$s for more than %1$d hour.</item>
+    </plurals>
+    <plurals name="troubleshoot_enablewifi_title_friendinstructions">
+        <item quantity="one">%1$s is asking you to troubleshoot this</item>
+        <item quantity="other">%1$s and %2$s more friends are asking you to troubleshoot this</item>
+    </plurals>
+    <plurals name="tst_emptystate_cta">
+        <item quantity="one">Add %1$d friend</item>
+        <item quantity="other">Add %1$d friends</item>
+    </plurals>
+    <plurals name="units_symbols_days">
+        <item quantity="one">Day</item>
+        <item quantity="other">Days</item>
+    </plurals>
+    <plurals name="units_symbols_hours">
+        <item quantity="one">Hr</item>
+        <item quantity="other">Hrs</item>
+    </plurals>
+    <plurals name="units_symbols_min">
+        <item quantity="one">Min</item>
+        <item quantity="other">Mins</item>
+    </plurals>
+    <plurals name="units_symbols_sec">
+        <item quantity="one">Sec</item>
+        <item quantity="other">Sec</item>
+    </plurals>
+    <plurals name="z_track4exp1var1_modal_button">
+        <item quantity="one">Get %1$d more friend</item>
+        <item quantity="other">Get %1$d more friends</item>
+    </plurals>
+</resources>

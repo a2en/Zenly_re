@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:theme="@style/ThemeOverlay.Zenly.Light" android:id="@+id/profile_bottom_sheet" android:background="@drawable/smooth_rect_white_cr325" android:paddingTop="@dimen/spacing_200" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/elevation_300" app:layout_behavior="app.zenly.locator.view.ScreenBarBottomSheetBehavior">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:paddingBottom="@dimen/navigation_padding_bottom" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <app.zenly.android.feature.polenta.widget.ScreenBarLayout android:id="@+id/profile_screen_bar_layout" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/profile_header" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/list_item_my_profile_header"/>
+        </app.zenly.android.feature.polenta.widget.ScreenBarLayout>
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:theme="@style/ThemeOverlay.Zenly.Light" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="0x7f0803e3" android:scaleType="fitXY" android:tint="?attr/zenlyColorBackground" android:elevation="@dimen/elevation_300" android:outlineProvider="none"/>
+    <app.zenly.locator.userprofile.p198me.view.UnlockAnimationView android:id="@+id/unlock_animation_view" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/elevation_300" android:outlineProvider="none"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/spacing_200" android:src="@drawable/smooth_rect_blue_black_cr250" android:alpha="0"/>
+    <app.zenly.android.base.widget.LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_200">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.PrimaryBody" android:textColor="?attr/zenlyTextColorPrimary" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_300" android:alpha="0" android:layout_marginStart="@dimen/spacing_100" android:layout_marginEnd="@dimen/spacing_100"/>
+        <FrameLayout android:id="@+id/lottie_container" android:layout_width="match_parent" android:layout_height="0dp">
+            <app.zenly.locator.core.p072ui.view.particles.ParticleView android:id="@+id/particles" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/lottie" android:layout_width="@dimen/grid_size_1100" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </app.zenly.android.base.widget.LinearLayout>
+</merge>

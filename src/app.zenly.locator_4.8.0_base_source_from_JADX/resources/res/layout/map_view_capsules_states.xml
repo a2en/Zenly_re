@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ViewStub android:id="@+id/capsule_live" android:layout="@layout/map_view_capsules_states__live" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/capsule_outdated_gray" android:layout="@layout/map_view_capsules_states__outdated_gray" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/capsule_outdated_pink" android:layout="@layout/map_view_capsules_states__outdated_pink" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/capsule_heading" android:layout="@layout/map_view_capsules_states__heading" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/capsule_heading_outdated_gray" android:layout="@layout/map_view_capsules_states__heading_outdated_gray" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/capsule_heading_outdated_pink" android:layout="@layout/map_view_capsules_states__heading_outdated_pink" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/capsule_sleeping" android:layout="@layout/map_view_capsules_states__sleeping" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/capsule_sleeping_outdated_gray" android:layout="@layout/map_view_capsules_states__sleeping_outdated_gray" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/capsule_sleeping_outdated_pink" android:layout="@layout/map_view_capsules_states__sleeping_outdated_pink" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/capsule_blurred" android:layout="@layout/map_view_capsules_states__blurred" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/capsule_low_precision" android:layout="@layout/map_view_capsules_states__low_precision" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/capsule_location_disabled" android:layout="@layout/map_view_capsules_states__location_disabled" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</merge>

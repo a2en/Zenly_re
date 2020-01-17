@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="?attr/zenlyWidgetColorForeground"/>
+            <size android:height="@dimen/grid_size_200" android:width="@dimen/grid_size_200"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/spacing_50" android:top="@dimen/spacing_50" android:right="@dimen/spacing_50" android:bottom="@dimen/spacing_50">
+        <bitmap android:src="@drawable/icon_checkmark_size_16" android:tint="?attr/zenlyButtonSecondaryTextColor"/>
+    </item>
+</layer-list>

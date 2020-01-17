@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/battery_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_25" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <ImageView android:id="@+id/plug_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0801e4" android:alpha="0" android:layout_marginStart="@dimen/spacing_25" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <androidx.constraintlayout.widget.Barrier android:id="@+id/icons" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="6" app:constraint_referenced_ids="battery_icon,plug_icon"/>
+    <TextView android:textAppearance="@style/TextAppearance.Caption" android:id="@+id/percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginEnd="@dimen/spacing_50" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/icons" app:layout_constraintTop_toTopOf="0"/>
+</merge>

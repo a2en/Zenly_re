@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.zenly.android.feature.polenta.widget.EmptyView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.Zenly.Light" android:id="@+id/empty_view" android:background="?attr/zenlyColorBackground" android:layout_width="match_parent" android:layout_height="match_parent" app:actionText="@string/report_complete_close" app:src="0x7f0803a5" app:subtitle="@string/report_complete_message"/>

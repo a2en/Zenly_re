@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <app.zenly.android.base.widget.LinearLayout android:orientation="horizontal" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/spacer_200" android:showDividers="middle" style="@style/ListItem">
+        <include android:id="@+id/container_1" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/list_item_broadcast_invite_list_item"/>
+        <include android:id="@+id/container_2" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/list_item_broadcast_invite_list_item"/>
+        <include android:id="@+id/container_3" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/list_item_broadcast_invite_list_item"/>
+        <include android:id="@+id/container_4" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/list_item_broadcast_invite_list_item"/>
+        <include android:id="@+id/container_5" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/list_item_broadcast_invite_list_item"/>
+    </app.zenly.android.base.widget.LinearLayout>
+</HorizontalScrollView>
