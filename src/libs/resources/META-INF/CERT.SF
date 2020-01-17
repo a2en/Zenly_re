@@ -1,0 +1,47 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: /2n5DuKegZwtnmDf8vJeNwWMFwI=
+X-Android-APK-Signed: 2
+
+Name: AndroidManifest.xml
+SHA1-Digest: EAQjtSLSLxGsdSBQbg9wQiqTTpg=
+
+Name: lib/arm64-v8a/libJniBitmapOperator.so
+SHA1-Digest: WzVBLUBj21AyymumMa4HQPd6ljg=
+
+Name: lib/arm64-v8a/libJniYuvOperator.so
+SHA1-Digest: +vVMSPmd9DN+2tY1Fxic7Qus7so=
+
+Name: lib/arm64-v8a/libcardgenerator.so
+SHA1-Digest: cu9NMITS7i3KXqBiH2VAHh7up94=
+
+Name: lib/arm64-v8a/libcrashlytics.so
+SHA1-Digest: 1pCdCpJ5X4C/1sfw2eiOOIDFb0M=
+
+Name: lib/arm64-v8a/libgojni.so
+SHA1-Digest: eHEOPVTNlrQr1LkeqKH/7OLnE0s=
+
+Name: lib/arm64-v8a/libimagepipeline.so
+SHA1-Digest: b5LIvEKuKOBD023E3lttTxTnCtc=
+
+Name: lib/arm64-v8a/libjpgd.so
+SHA1-Digest: AeuN/ujAKKI0KZjoVQIlUeBzU+k=
+
+Name: lib/arm64-v8a/libjpge.so
+SHA1-Digest: neiUSwWOoYEi0+yEV/EWQpGxeMw=
+
+Name: lib/arm64-v8a/libmapbox-gl.so
+SHA1-Digest: SgVsgdYQVNFRQ6Wm5cFLIrNTJrM=
+
+Name: lib/arm64-v8a/libnative-filters.so
+SHA1-Digest: 7GPL+yt7OG2vySfUGNfRWg3ex0Y=
+
+Name: lib/arm64-v8a/libnative-imagetranscoder.so
+SHA1-Digest: uYbxcQsksJKblycc2QZoBAxyCug=
+
+Name: lib/arm64-v8a/libpruneau.so
+SHA1-Digest: uKloO4otMFxggrcuMq+ZJuZ5LU0=
+
+Name: lib/arm64-v8a/libstatic-webp.so
+SHA1-Digest: 3xGFthkvru1LxJXKiwxYvYrClcA=
+

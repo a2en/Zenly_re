@@ -1,0 +1,46 @@
+Manifest-Version: 1.0
+Built-By: BundleTool
+Created-By: BundleTool
+
+Name: AndroidManifest.xml
+SHA1-Digest: YHARAOx5I/vPmvPfeIkog6DKG8g=
+
+Name: lib/arm64-v8a/libJniBitmapOperator.so
+SHA1-Digest: uW8YIWsJm0evVVierkhQTUMjz5A=
+
+Name: lib/arm64-v8a/libJniYuvOperator.so
+SHA1-Digest: TkW5D4hPkk5mkhXLW/DI+snTG7U=
+
+Name: lib/arm64-v8a/libcardgenerator.so
+SHA1-Digest: M8MML8bbzL3tjJ+COOCmgmcMAg8=
+
+Name: lib/arm64-v8a/libcrashlytics.so
+SHA1-Digest: UJw+IgeymNYqrn4hTQ1SngcBwQs=
+
+Name: lib/arm64-v8a/libgojni.so
+SHA1-Digest: L0KpCMTkVCQ7T5MJ7FtOyFXTa4k=
+
+Name: lib/arm64-v8a/libimagepipeline.so
+SHA1-Digest: uSEddtnoDiUTwtNnKUgPG0rjx4o=
+
+Name: lib/arm64-v8a/libjpgd.so
+SHA1-Digest: 1UWlB4yJegNgCipQNkYFbnqwvSA=
+
+Name: lib/arm64-v8a/libjpge.so
+SHA1-Digest: URXeXiPeXOazgAAxkEMMd8vUoe8=
+
+Name: lib/arm64-v8a/libmapbox-gl.so
+SHA1-Digest: vSIMNaS59P/Y4PVg6UHKHNeiU88=
+
+Name: lib/arm64-v8a/libnative-filters.so
+SHA1-Digest: B7IWEXuOmNZZRHJ9bUbKgkGzsDE=
+
+Name: lib/arm64-v8a/libnative-imagetranscoder.so
+SHA1-Digest: rv0SoFuayRtt09UyJgEuND3oARA=
+
+Name: lib/arm64-v8a/libpruneau.so
+SHA1-Digest: JbexKxRIOprE4WUh+DvL0DfH9GU=
+
+Name: lib/arm64-v8a/libstatic-webp.so
+SHA1-Digest: qpPYYnGYavKk+fL/ifsDgBm3SCQ=
+
